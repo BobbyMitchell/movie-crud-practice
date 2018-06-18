@@ -1,0 +1,8 @@
+<h1>All Moviews in Database</h1>
+
+<% @movies.each do |movie| %>
+  <h1> <%= link_to movie.title, movie_path(movie) %> </h1>
+  <p> <%= movie.genre %> </p>
+  <p> <%= "*" * movie.rating %> </p>
+  <% end %>
+  <%= link_to "Enter a new movie", new_movie_path %>

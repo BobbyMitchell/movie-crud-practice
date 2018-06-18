@@ -1,0 +1,9 @@
+<%= form_for @movie do |f|%>
+<%= f.label :title, "Enter movie title" %>
+<%= f.text_field :title %>
+<%= f.label :genre, "Enter movie genre" %>
+<%= f.text_field :genre %>
+<%= f.label :rating, "Enter movie rating" %>
+<%= f.text_field :rating%>
+<%= f.submit %>
+<% end %>
